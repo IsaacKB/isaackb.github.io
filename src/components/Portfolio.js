@@ -122,7 +122,6 @@ export default function Portfolio() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Contato</h2>
           <p>📧 E-mail: isaackb1@gmail.com</p>
-          <p>📞 WhatsApp: +55 13 98223-4569</p>
         </section>
       </div>
     </div>
