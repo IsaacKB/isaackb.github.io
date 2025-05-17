@@ -11,22 +11,23 @@ export default function ContactForm() {
   const [pending, setPending] = useState(false);
   const [message, setMessage] = useState("");
 
-  async function handleSubmit(formData: FormData) {
-    setPending(true);
-    try {
-      // const response = await submitContactForm(formData);
-      // setMessage(response.message);
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      setMessage("Something went wrong. Please try again.");
-    } finally {
-      setPending(false);
-    }
-  }
+  // async function handleSubmit(formData: FormData) {
+  //   setPending(true);
+  //   try {
+  //     // const response = await submitContactForm(formData);
+  //     // setMessage(response.message);
+  //   } catch (error) {
+  //     console.error("Error submitting form:", error);
+  //     setMessage("Something went wrong. Please try again.");
+  //   } finally {
+  //     setPending(false);
+  //   }
+  // }
 
   return (
     <Card className="p-6">
-      <form action={handleSubmit} className="space-y-4">
+      {/* <form action={handleSubmit} className="space-y-4"> */}
+      <form className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-2">
             Name
