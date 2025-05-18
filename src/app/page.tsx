@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
+
+import { Icon } from "@iconify/react";
+
 import Link from "next/link";
 import ContactForm from "./components/contact-form";
 import ProjectCard from "./components/project-card";
@@ -12,7 +15,9 @@ export default function Page() {
         <div className="container flex h-14 items-center">
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
-              <span className="hidden font-bold sm:inline-block">John.dev</span>
+              <span className="hidden font-bold sm:inline-block">
+                Isaac.dev
+              </span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
               <Link
@@ -55,25 +60,28 @@ export default function Page() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Link href="https://github.com" target="_blank">
+                <Link href="https://github.com/IsaacKB/" target="_blank">
                   <Button variant="outline" size="icon">
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com" target="_blank">
+                <Link
+                  href="https://www.linkedin.com/in/isaac-kb/"
+                  target="_blank"
+                >
                   <Button variant="outline" size="icon">
                     <Linkedin className="h-4 w-4" />
                     <span className="sr-only">LinkedIn</span>
                   </Button>
                 </Link>
-                <Link href="https://twitter.com" target="_blank">
+                <Link href="https://x.com" target="_blank">
                   <Button variant="outline" size="icon">
-                    <Twitter className="h-4 w-4" />
-                    <span className="sr-only">Twitter</span>
+                    <Icon icon="bi:twitter-x" />
+                    <span className="sr-only">X (old Twitter)</span>
                   </Button>
                 </Link>
-                <Link href="mailto:hello@example.com">
+                <Link href="mailto:isaackb1@gmail.com">
                   <Button variant="outline" size="icon">
                     <Mail className="h-4 w-4" />
                     <span className="sr-only">Email</span>
@@ -139,7 +147,7 @@ export default function Page() {
       <footer className="border-t">
         <div className="container flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6">
           <p className="text-xs text-gray-500 dark:text-gray-400">
-            © 2024 John.dev. All rights reserved.
+            © 2024 Isaac.dev. All rights reserved.
           </p>
           <nav className="sm:ml-auto flex gap-4 sm:gap-6">
             <Link
